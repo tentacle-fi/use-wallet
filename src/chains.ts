@@ -37,6 +37,12 @@ const BNB: Currency = {
   decimals: 18,
 }
 
+const UBQ: Currency = {
+  name: 'UBIQ',
+  symbol: 'UBQ',
+  decimals: 18,
+}
+
 const CHAIN_INFORMATION = new Map<number, ChainInformation | ChainType>([
   [
     1,
@@ -191,6 +197,18 @@ const CHAIN_INFORMATION = new Map<number, ChainInformation | ChainType>([
       shortName: 'Harmony Testnet',
       explorerUrl: `https://explorer.testnet.harmony.one/`,
       testnet: true,
+    },
+  ],
+  [
+    8,
+    {
+      id: 8,
+      nativeCurrency: UBQ,
+      type: 'ubq',
+      fullName: 'UBIQ',
+      shortName: 'UBQ',
+      explorerUrl: `https://ubiqscan.io/`,
+      testnet: false,
     },
   ],
   [
